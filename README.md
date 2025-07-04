@@ -361,6 +361,12 @@ npx knex seed:run
 
 # Crear nuevo seed
 npx knex seed:make nombre_del_seed
+
+#Borrar base de datos y migrar todo nuevamente con seeds
+docker-compose down
+docker-compose up -d
+docker-compose exec -T app npx knex migrate:latest
+docker-compose exec -T app npx knex seed:run
 ```
 
 ## Seguridad

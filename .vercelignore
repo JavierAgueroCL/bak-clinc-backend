@@ -1,0 +1,15 @@
+node_modules
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.log
+.DS_Store
+docker-compose.yml
+Dockerfile
+migrations
+seeds
+CLAUDE.md
+README.md
+postman_collection.json
